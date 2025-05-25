@@ -1,0 +1,3 @@
+Flask==2.1.0  # Możesz użyć najnowszej wersji Flaska
+werkzeug==2.1.0  # Użyj wersji, która jest kompatybilna z Twoją wersją Flaska
+

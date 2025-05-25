@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  node_app:
+    build: ./node_app
+    ports:
+      - "3000:3000"
+    networks:
+      - my_network
+
+  nginx:
+    build: .
+    ports:
+      - "80:80"
+      - "443:443"
+    depends_on:
+      - node_app
+    networks:
+      - my_network
+
+networks:
+  my_network:
